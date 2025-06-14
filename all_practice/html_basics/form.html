@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Creacion de formularios</h1>
+
+    <p>Utilizar < form> < /form> para crear el formulario</p>
+    <p>Para indicar donde el formulario sera enviado, utilizar el atributo: action="Aqui la url donde sera enviado". Ejemplo:</p>
+    <p>
+        < form action="/submit/url"> <br>
+        < /form>
+
+    </p>
+    <p>Dentro del formulario pueden crearse inputs:</p>
+
+    <h3>Input tag y atributos:</h3>
+    <p>
+        Atributos de input:
+        <ul>
+            <li>type="text"</li>
+            <li>name="firstname"</li>
+            <li>placeholder="some text"</li>
+            <li>required</li>
+        </ul>
+    </p>
+
+    <form action="/submit-url" >
+        <input type="text" name="firstname" placeholder="some text" required >
+
+    </form>
+
+    <h3>Utilizar < label> para asociar el texto del input con el propio input:</h3>
+    <p>
+        < label> Este es el label del input<br>
+        < input><br>
+        < /label><br>
+    </p>
+
+
+    <form action="/submit-url">
+        <label>Este es el label del input
+            <input type="text" placeholder="some text" name="lastname" required>
+        </label>
+    </form>
+
+
+</body>
+</html>

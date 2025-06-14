@@ -47,6 +47,53 @@
         </label>
     </form>
 
+    <h3>Input de tipo radio:</h3>
+    <form>
+
+        <label>Seleccionar pollo
+            <input type="radio" name="meal" value="pollo">
+        </label>
+
+        <br>
+
+        <label>Seleccionar res
+            <input type="radio" name="meal" value="res">
+        </label>
+
+    </form>
+
+    <h3>Input dentro de un < fieldset>:</h3>
+    <p>Estructura:<br><br>
+        < fieldset><br>
+            < legend>< /legend><br>
+            *** Inputs ***<br>
+        < /fieldset><br>
+    </p>
+
+    <h4>Resultado de un fieldset</h4>
+    <form>
+        <fieldset>
+            <legend>Este es un fielset</legend>
+                    <label>Seleccionar amarillo
+            <input type="radio" name="meal" value="pollo">
+            </label>
+
+            <br>
+
+            <label>Seleccionar rojo
+                <input type="radio" name="meal" value="res">
+            </label>
+        </fieldset>
+        <button>Boton para enviar el formulario</button>
+    </form>
+    <h3>Adicionando checkbox:</h3>
+
+    <form>
+        <input id="loving" type="checkbox" name="personality"> <label for="loving">Loving</label>
+        <input id="lazy" type="checkbox" name="personality"> <label for="lazy">Lazy</label>
+        <input id="energetic" type="checkbox" name="personality"> <label for="energetic">Energetic</label>
+    </form>
+
 
 </body>
 </html>

@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(235, 208, 208);
+}
+
 h1{
     text-align: center;
     background-color: aquamarine;
@@ -11,4 +15,9 @@ h2{
 p{
     text-align: right;
     background-color: aqua;
+}
+
+#primer-div{
+    background-color: rgb(160, 73, 241);
+    width:300px;
 }

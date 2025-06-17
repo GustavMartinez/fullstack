@@ -29,3 +29,11 @@ main > p{
     background-color: rgb(206, 168, 122);
     width:80%;
 }
+
+#tercer-div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 600px;
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+}

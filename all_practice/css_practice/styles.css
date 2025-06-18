@@ -36,4 +36,21 @@ main > p{
     width: 50%;
     height: 600px;
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    
+}
+
+#tercer-div p{
+    display: inline-block;
+}
+
+#tercer-div .a{
+    background-color: blue;
+}
+
+#tercer-div .b{
+    background-color: yellowgreen;
+}
+
+#tercer-div h4{
+    color: aliceblue;
 }

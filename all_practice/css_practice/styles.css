@@ -62,3 +62,15 @@ main > p{
     margin-right: auto;
     max-width: 600px;
 }
+
+#cuarto-div a{
+    color: black;
+}
+
+#cuarto-div a:visited{
+    color: green;
+}
+
+#cuarto-div a:hover{
+    color: white;
+}

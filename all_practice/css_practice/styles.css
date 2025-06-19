@@ -74,3 +74,7 @@ main > p{
 #cuarto-div a:hover{
     color: white;
 }
+
+#cuarto-div a:active{
+    color: blanchedalmond;
+}

@@ -3,3 +3,10 @@
     width: 500px;
     height: 100px;
 }
+
+.recuadro-interno{
+    margin: auto;
+    background-color: aliceblue;
+    width: 300px;
+    height: 60px;
+}

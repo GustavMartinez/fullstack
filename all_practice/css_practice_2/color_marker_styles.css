@@ -5,6 +5,17 @@ h1 {
 .marker {
   width: 200px;
   height: 25px;
-  background-color: red;
-  margin: auto;
+  margin: 10px auto;
+}
+
+.one{
+    background-color: red;
+}
+
+.two{
+    background-color: green;
+}
+
+.three{
+    background-color: blue;
 }

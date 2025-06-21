@@ -27,11 +27,15 @@
 }
 
 .recuadro{
-    margin: 10px;
-    width: 25px;
+    margin: 10px auto;
+    width: 200px;
     height: 25px;
 }
 
 .rec1{
-    background-color: blue;
+    background: linear-gradient(90deg, rgb(255,0,0), rgb(0,255,0));
+}
+
+.rec2{
+    background: linear-gradient(-90deg, rgb(255,0,0), rgb(0,0,255));
 }

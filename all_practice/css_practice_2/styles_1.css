@@ -12,6 +12,7 @@
 }
 
 .container{
+    display:block;
     width:400px;
     height: 400px;
     margin: auto;
@@ -37,5 +38,7 @@
 }
 
 .rec2{
-    background: linear-gradient(-90deg, rgb(255,0,0), rgb(0,0,255));
+    background: linear-gradient(-90deg, rgb(255,0,0) 50%, rgb(0,255,0), rgb(0,0,255)); /* El 50% indica en donde debe ser la transicion del primer al segundo color - Ver que no hay coma entre el color y el porcentaje*/
 }
+
+/* box-shadow: offsetX offsetY blurRadius spreadRadius color; */

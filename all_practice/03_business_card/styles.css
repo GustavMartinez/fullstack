@@ -1,0 +1,32 @@
+body{
+    margin: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.avatar{
+    width: 150px;
+    border-radius: 30px 0;
+}
+
+.avatar:hover{
+    border-radius: 0 30px;
+}
+
+.card{
+    background: #ffe6a7;
+    border-bottom: 8px solid #6f1d1b;
+    color: #2b2839;
+    text-align: center;
+    width:400px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 2px 2px 6px 1px;
+    border-radius: 30px 0px;
+}
+
+h3:hover{
+    color: #c98280;
+}
+

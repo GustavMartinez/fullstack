@@ -1,5 +1,6 @@
 body{
-    background-color: #a2d2ff;
+    /*background-color: #a2d2ff;*/
+    background: linear-gradient(#a2d2ff, #EFB0C9);
     color: #ffffff;
     text-align: center;
     font-family: "Happy Monkey", system-ui;
@@ -51,6 +52,7 @@ h1, h2, h3, h4, p{
 
 .gift-img{
     background-image: url('./images/gift-cover.jpg');
+    /*background: linear-gradient(lightskyblue, white);*/
     background-size: cover;
     height: 400px;
     margin: auto;

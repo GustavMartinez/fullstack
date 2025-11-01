@@ -15,10 +15,12 @@ let count = 0;
 function increment(){
     count = count + 1
 
-    countEL.innerHTML = count
+    countEL.textContent = count
 }
 
 function save(){
     let myVar = count + " - "
-    saveEl.innerText += myVar
+    saveEl.textContent+= myVar
+    countEL.textContent = 0
+    count = 0
 }

@@ -17,6 +17,8 @@ h1{
 }
 
 button{
+    display: block;
+    margin: 5px auto;
     width: 150px;
     color: #016f32;
     background-color: goldenrod;

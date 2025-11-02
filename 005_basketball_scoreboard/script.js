@@ -9,17 +9,32 @@ let guestEl = document.getElementById("guest-el")
 
 
 
-function addOne(){
+function addOneH(){
     home = home + plusOne
     homeEl.textContent = home;
 }
 
-function addTwo(){
+function addTwoH(){
     home = home + plusTwo;
     homeEl.textContent = home;
 }
 
-function addThree(){
+function addThreeH(){
     home = home + plusThree;
     homeEl.textContent = home;
+}
+
+function addOneG(){
+    guest = guest + plusOne
+    guestEl.textContent = guest;
+}
+
+function addTwoG(){
+    guest = guest + plusTwo;
+    guestEl.textContent = guest;
+}
+
+function addThreeG(){
+    guest = guest + plusThree;
+    guestEl.textContent = guest;
 }

@@ -18,3 +18,8 @@ function addTwo(){
     home = home + plusTwo;
     homeEl.textContent = home;
 }
+
+function addThree(){
+    home = home + plusThree;
+    homeEl.textContent = home;
+}

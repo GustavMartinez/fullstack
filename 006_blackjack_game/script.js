@@ -28,7 +28,7 @@ function renderGame(){
     }else if (sum === 21){
         message = "You've got Balckjack";
         hasBlackJack = true
-    }else if (sum > 21){
+    }else {
         message = "You're out of the game!";
         isAlive = false;
     }
@@ -45,5 +45,6 @@ function newCard(){
 
     let card = 5;
     sum += card;
+    cards.push(card)
     renderGame()
 }

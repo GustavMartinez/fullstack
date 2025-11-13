@@ -1,0 +1,10 @@
+let sentence = ["Hello", "my", "name", "is", "Gus"]
+
+let greetingEl = document.getElementById("greeting-el")
+
+
+greetingEl.textContent("gus")
+
+//for (let i = 0; i < sentence.length; i +=1){
+//    greetingEl.textContent(sentence[i])
+//}

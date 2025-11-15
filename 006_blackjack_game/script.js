@@ -2,8 +2,8 @@ let messageEL = document.getElementById("message-el")
 let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.querySelector("#cards-el")
 
-let firstCard = 11;
-let secondCard = 6;
+let firstCard = getRandomCard();
+let secondCard = getRandomCard();
 
 let cards = [firstCard, secondCard,]
 
@@ -13,14 +13,29 @@ let isAlive = true;
 
 let message = "";
 
+
+function getRandomCard(){
+    let randomNumber = Math.floor(Math.random()*13) + 1
+    return randomNumber
+}
+
+
+
+
 function startGame(){
     renderGame();
 }
 
 function renderGame(){
 
+    cardsEl.textContent = "Cards: ";
+
+    for (let i = 0; i < cards.length; i+=1){
+        cardsEl.textContent += cards[i] + " "
+    }
+
     sumEl.textContent = "Sum: " + sum;
-    cardsEl.textContent = "Cards: " + cards[0] +" " + cards[1];
+    
 
     if (sum <= 20){
         message = "Do you want to draw a new card?";
@@ -43,7 +58,7 @@ function renderGame(){
 function newCard(){
     console.log("Drawing a new card from the deck!")
 
-    let card = 5;
+    let card = getRandomCard();
     sum += card;
     cards.push(card)
     renderGame()

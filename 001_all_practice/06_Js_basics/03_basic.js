@@ -26,6 +26,11 @@ console.log(11%3);
 
 // pattern to modify by another number
 
+let a = 1;
+let b = 2;
+let c = 3;
+let d = 4;
+
 a = a + 12; // >>> a += 12
 b = 9 + b; // >>>  b -= 9
 c = c + 7; // >>> c *= 7

@@ -1,10 +1,10 @@
 
 /* array functions:
 
-- .push()
-- .pop()
-- .shift()
-- .unshift()
+- .push() >>> Esta funcion adiciona elementos al final del array
+- .pop()  >>> Esta funcion elimina el elemento al final del array
+- .shift() >>> Esta función elimina elementos al inicio del array
+- .unshift() >>> Esta función adiciona elementos al inicio del array
 
 */
 

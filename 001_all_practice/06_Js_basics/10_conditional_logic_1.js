@@ -10,3 +10,17 @@ function trueOrFalse(isItTrue){
 console.log(trueOrFalse(false))
 console.log(trueOrFalse(true))
 
+
+// comparison
+
+function testEqual(val){
+    if (val == 12){
+        return "Equal";
+    }
+    else{
+        return "Not equal"
+    }
+}
+
+console.log(testEqual(12))
+console.log(testEqual("Hola"))

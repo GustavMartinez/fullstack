@@ -1,9 +1,13 @@
+
+// primera función
 function minusSeven(num){
     return num - 7;
 }
 
 console.log(minusSeven(15));
 
+
+// segunda función
 function timesFive(num){
     return num * 5;
 }

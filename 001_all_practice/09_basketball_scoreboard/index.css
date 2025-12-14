@@ -13,3 +13,9 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     justify-content: space-around;
 }
+
+.team-board{
+    background-color:rgb(43, 32, 84) ;
+    width: 15%;
+    text-align: center;
+}

@@ -17,6 +17,8 @@ h1{
 }
 
 button{
+    display: block;
+    margin: 10px auto;
     color: #016f32;
     background-color: goldenrod;
     font-size: 15px;

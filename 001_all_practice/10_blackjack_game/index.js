@@ -14,7 +14,7 @@ let isAlive = true;
 let message = "";
 
 
-function startGame(){
+function renderGame(){
     // rendering the cards:
     cardsEl.textContent = "Cards: " + firstCard + " " + secondCard;
 
@@ -38,6 +38,14 @@ function startGame(){
     //console.log(message)
 }
 
+
+function startGame(){
+    renderGame();
+}
+
+
 function newCard(){
-    console.log("test")
+    let card = 6;
+    sum += card;
+    renderGame();
 }

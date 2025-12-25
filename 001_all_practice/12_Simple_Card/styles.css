@@ -11,6 +11,10 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 .container{
 
     background-color: #383A45;
@@ -56,6 +60,6 @@ p.description{
 
 @media only screen and (min-width:950px){
     html{
-        font-size: 18px ;
+        font-size: 18px;
     }
 }

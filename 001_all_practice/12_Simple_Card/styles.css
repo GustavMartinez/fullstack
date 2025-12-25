@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    background-color: #2D2E36;
+}
+
+
+#container{
+    width: 729px;
+    height: 310px;
+    background-color: #383A45;
+    margin-top: 317px;
+    margin-left: 393px;
+    border-radius: 8px;
+}

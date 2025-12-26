@@ -1,0 +1,74 @@
+
+/*  FONT FAMILY
+
+// <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, p{
+    margin-top: 0;
+}
+
+h1{
+    font-size: 32px;
+    font-weight: 800;
+}
+
+p{
+    font-size: 18px;
+}
+
+a{
+    color: #FFE600;
+}
+
+header, section{
+    padding: 50px;
+}
+
+header{
+    background-color: #FFE600;
+    color: #000;
+}
+
+.section-one{
+    background-color: #000;
+    color: white;
+}
+
+.section-two-link{
+    color: #000;
+}
+
+
+/* Button styles */
+
+.btn{
+    display: inline-block;
+    padding: 12px 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-accent{
+    background-color: #FFE600;
+    color: #000;
+}
+
+.btn-dark{
+    background-color: #000;
+    color: #fff;
+}

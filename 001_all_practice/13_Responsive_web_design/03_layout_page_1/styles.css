@@ -68,7 +68,16 @@ header{
     color: #000;
 }
 
+.btn-accent:hover{
+    background-color: #fff;
+}
+
 .btn-dark{
     background-color: #000;
     color: #fff;
+}
+
+.btn-dark:hover{
+    background-color: #FFE600;
+    color: #000;
 }

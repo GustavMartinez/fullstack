@@ -54,4 +54,12 @@ a{
     color:#ff8000;
 }
 
+a:hover{
+    color: #104c90;
+}
+
+a:focus{
+    color: #2e7ad3;
+}
+
 /*imagen = 451*/

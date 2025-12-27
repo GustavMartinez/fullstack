@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "lato";
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #2E354f;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.container{
+    border: 1px solid pink;
+    width: 620px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 50px 0;
+}
+
+.section-two{
+    background-color: #2E354f;
+    color: #fff;
+}
+
+h2{
+    color: #EF5839;
+    margin-bottom: 15px;
+}
+
+p{
+    margin: 10px 0; 
+}
+
+

@@ -19,7 +19,8 @@ header{
 .container{
     border: 1px solid pink;
     /*width: 620px; >>>>>>>>>>>>> Cambiar aqui pixeles por % */
-    width: 50%;
+    width: 90%;
+    max-width: 620px;   /* Adicionar max-width para que el container cresca hasta un punto */
     margin: 0 auto;
 }
 

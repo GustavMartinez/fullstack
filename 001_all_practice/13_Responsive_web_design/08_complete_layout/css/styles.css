@@ -1,0 +1,43 @@
+/*  Fonts
+-----
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    padding: 0;
+}
+
+ul li{
+    margin-left: 1em;
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+}
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 900px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}

@@ -13,31 +13,52 @@ h1{
     font-family: 'Lora', serif;
     font-weight: 400;
     margin: 0;
+    color: #143774;
 }
 
-p{
-    margin: 0;
-}
-
-ul{
-    display: flex;
-    padding: 0;
-}
-
-ul li{
-    margin-left: 1em;
-    list-style: none;
-}
-
-ul a{
-    text-decoration: none;
+header{
+    background-color: #f8f8f8;
+    padding: 2em 0;
 }
 
 .container{
     margin: 0 auto;
     width: 90%;
     max-width: 900px;
-    background-color: aqua;
     display: flex;
     justify-content: space-between;
+    border: 1px solid magenta;
+}
+
+.site-title{
+    color: #1792D2;
+}
+
+.subtitle{
+    margin: 0;
+    font-weight: 700;
+    font-size: .75rem;
+}
+
+nav ul{
+    display: flex;
+    padding: 0;
+}
+
+nav li{
+    margin-left: 2em;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #707070;
+    padding: .25em 0;
+}
+
+
+
+.current-page{
+    border-bottom: 2px solid #707070;
 }

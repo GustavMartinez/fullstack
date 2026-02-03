@@ -1,7 +1,15 @@
 .heading{
     color: darkblue;
     font-size: 2rem;
-    transition: all 0.5s;
+    /*transition: all 0.5s;*/
+    transition-property: font-size, color; 
+    transition-duration: 0.5s;
+    transition-delay: 1s;
+    transition-timing-function:ease-in;
+
+    /* Shorthand property */
+    /* transition-property transition-duration transition-timing-function transition-deley */
+    transition: all 0.5s ease-in 1s
 }
 
 .heading:hover{

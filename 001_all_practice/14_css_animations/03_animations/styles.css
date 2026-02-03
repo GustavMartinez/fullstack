@@ -1,0 +1,55 @@
+.box-1{
+    width: 50px;
+    height: 50px;
+    background: red;
+    border: 1px solid black;
+    animation-name: grow-1;
+    animation-duration: 2s;
+}
+
+@keyframes grow-1 {
+    0%{width: 50px; height: 50px; background: red;}
+    50%{width: 100px; height: 50px; background: blue;}
+    100%{width: 100px; height: 100px; background: green;}
+}
+
+.box-2{
+    margin-top: 5em;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border: 1px solid black;
+    animation-name: grow-2;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+
+    animation-timing-function: ease;
+    animation-direction: reverse;
+}
+
+@keyframes grow-2{
+    0%{width: 100px; height: 100px; background:blue;}
+    50%{width: 10px; height: 10px; background: red;}
+    100%{width: 100px; height: 100px; background:blue;}
+}
+
+.box-3{
+    margin-top: 5em;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    border: 1px solid black;
+    animation-name: grow-3;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: 4;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+@keyframes grow-3 {
+    from {width: 100px; height: 100px; background: blue;}
+    to {width: 10px; height: 10px; background: red;}
+}

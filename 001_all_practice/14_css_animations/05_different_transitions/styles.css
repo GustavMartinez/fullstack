@@ -1,0 +1,58 @@
+body{
+    font-family: sans-serif;
+}
+
+h3{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    height: 1200px;
+    margin: auto;
+}
+
+.section{
+    display: flex;
+    width: 100%;
+}
+
+.boxes{
+    border: 1px solid black;
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+
+}
+
+.box-1{
+    color: white;
+    background-color: #121212;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    
+}
+
+.box-1:hover{
+    color: #121212;
+    background-color: white;
+    font-size: 6rem;
+}
+
+.box-2{
+    color: orange;
+    background-color: blue;
+    transition: all 1s 0.01s;
+}
+
+.box-2:hover{
+    color: blue;
+    background-color: orange;
+    font-size: 1rem;
+}

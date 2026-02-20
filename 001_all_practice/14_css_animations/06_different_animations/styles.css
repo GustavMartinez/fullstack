@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+}
+
+.container{
+    margin: 0 auto;
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section{
+    width: 100%;
+    height: 250px;
+    display: flex;
+}
+
+.box{
+    width: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.square{
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+    animation-name: grow;
+    animation-duration: 2s;
+}
+
+@keyframes grow {
+    0%{width: 50px; height: 50px; background-color: blanchedalmond;}
+    90%{width: 100px; height: 100px; background-color: aqua;}
+    100%{width: 50px; height: 50px; background-color: blueviolet;}
+}
+
+.rectangle{
+    background-color: antiquewhite;
+    width: 100px;
+    height: 50px;
+    animation-name: new_grow;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes new_grow {
+    0%{width: 100px; height: 50px;}
+    100%{width: 50px; height: 100px;}
+}
+
+.square-2{
+    background-color: wheat;
+    width: 50px;
+    height: 50px;
+    box-shadow: 10px 10px black;
+    animation-name: big-small;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes big-small {
+    0%{width: 50px; height: 50px; box-shadow: 10px 10px 20px black;}
+    50%{width: 100px; height: 100px; box-shadow: 1px 1px black;}
+    100%{width: 50px; height: 50px; box-shadow: 10px 10px 20px black;}
+}
+

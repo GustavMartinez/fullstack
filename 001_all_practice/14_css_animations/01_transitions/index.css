@@ -9,7 +9,7 @@
 
     /* Shorthand property */
     /* transition-property transition-duration transition-timing-function transition-deley */
-    transition: all 0.5s ease-in 1s
+    transition: all 0.5s ease-in 1s;
 }
 
 .heading:hover{

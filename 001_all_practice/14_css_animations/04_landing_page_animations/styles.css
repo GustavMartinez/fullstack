@@ -12,6 +12,10 @@ body{
     background: url("main.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    animation-name: expand-fade-in;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
 }
 
 .title{
@@ -20,4 +24,19 @@ body{
     margin: 0;
     font-family: Sen;
     text-align: center;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+}
+
+@keyframes expand-fade-in{
+    from{opacity: 0; width: 0%;}
+    to{opacity: 100%; width: 100%;}
+}
+
+@keyframes fade-in{
+    from{opacity: 0%;}
+    to{opacity: 100%;}
 }

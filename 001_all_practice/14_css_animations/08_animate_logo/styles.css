@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    background: #242423;
+}
+
+.box{
+    height: 30px;
+    width: 30px;
+}
+
+.box-red{
+    background: #ff4d4d;
+    margin:0;
+    animation-name: transform;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.box-blue{
+    background: #738cff;
+    margin: 0;
+    animation-name: transform;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.box-green{
+    background: #46ff36;
+    margin: 0;
+    animation-name: transform;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.box-orange{
+    background: #ffaf24;
+    margin: 0;
+    animation-name: transform;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes transform{
+    50%{transform:
+        translateX(50vw)
+        translateY(50vh)
+        scaleX(10)
+        skewY(60deg)
+    }
+    100%{transform:
+        translateX(0px)
+        translateY(0px)
+    }
+}

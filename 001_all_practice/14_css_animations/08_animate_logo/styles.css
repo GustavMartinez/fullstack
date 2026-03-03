@@ -1,3 +1,11 @@
+
+:root{
+    --color-red: #ff4d4d;
+    --color-blue: #738cff;
+    --color-green: #46ff36;
+    --color-orange: #ffaf24;
+}
+
 body{
     margin: 0;
     background: #242423;
@@ -9,15 +17,26 @@ body{
 }
 
 .box-red{
-    background: #ff4d4d;
+    background: var(--color-red);
     margin:0;
     animation-name: transform;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+
+    /* 
+
+    prefixes for animation - browser compatibility
+
+    -webkit-animation: size-down ease-out 0.5s infinite alternate both;
+    -ms-animation: size-down ease-out 0.5s infinite alternate both;
+    -moz-animation: size-down ease-out 0.5s infinite alternate both;
+    -o-animation: size-down ease-out 0.5s infinite alternate both;
+
+    */
 }
 
 .box-blue{
-    background: #738cff;
+    background: var(--color-blue);
     margin: 0;
     animation-name: transform;
     animation-duration: 2s;
@@ -25,7 +44,7 @@ body{
 }
 
 .box-green{
-    background: #46ff36;
+    background: var(--color-green);
     margin: 0;
     animation-name: transform;
     animation-duration: 2s;
@@ -33,7 +52,7 @@ body{
 }
 
 .box-orange{
-    background: #ffaf24;
+    background: var(--color-orange);
     margin: 0;
     animation-name: transform;
     animation-duration: 2s;

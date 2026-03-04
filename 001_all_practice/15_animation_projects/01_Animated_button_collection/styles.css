@@ -1,0 +1,59 @@
+body, h1, p{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 80%;
+    height: 1200px;
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+}
+
+p{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.col{
+    width: 99%;
+    height: 200px;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box{
+    width: 24%;
+    height: 190px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*  BUTTONS */
+
+.button{
+    width: 65%;
+    height: 70px;
+
+}
+
+.button-1{
+    background-color: blueviolet;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.button-1:hover{
+    background-color: chocolate;
+}

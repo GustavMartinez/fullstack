@@ -56,4 +56,30 @@ p{
 
 .button-1:hover{
     background-color: chocolate;
+    font-weight: 600;
+}
+
+.button-2{
+    background-color: #333;
+    border: 1px solid #333;
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 3.975);
+}
+.button-2:hover{
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    width: 75%;
+    height: 80px;
+}
+
+.button-3{
+    background-color: yellowgreen;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.button-3:hover{
+    rotate: 180deg;
 }

@@ -6,7 +6,7 @@ body, h1, p{
 
 .container{
     margin: 0 auto;
-    max-width: 80%;
+    width: 800px;
     height: 1200px;
 }
 
@@ -109,9 +109,10 @@ p{
     height: 50px;
     border: 2px solid aquamarine;
     animation-name: cuadrado;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-iteration-count: 1;
     animation-fill-mode:forwards;
+    animation-delay: 1s;
 
 }
 
@@ -124,4 +125,55 @@ p{
     80%{transform:translate(100%,-100%)}
     100%{transform: translate(100%, 100%);}
 
+}
+
+.square-2{
+    transform: translate(-100%, 100%);
+    width: 50px;
+    height: 50px;
+    border: 2px solid aquamarine;
+    animation-name: rotacion;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+
+@keyframes rotacion{
+    50%{transform: translate(100%, 100%) rotate(90deg); border-radius: 50%;}
+    100%{transform: translate(100%,-100%) rotate(180deg);}
+}
+
+.square-3{
+    transform: translate(-100%,-100%);
+    width: 50px;
+    height: 50px;
+    border: 2px solid aquamarine;
+    opacity: 0;
+    animation-name: aparecer;
+    animation-duration: 4s;
+    animation-delay: 7.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aparecer {
+    20%{transform: translate(100%,-100%); opacity: 100%;}
+    40%{transform: translate(100%,100%); opacity: 10%;}
+    60%{transform: translate(-100%,100%); opacity: 100%;}
+    80%{transform: translate(-100%, 0%); opacity: 10%;}
+    100%{transform: translate(100%, 0%); opacity: 100%;}
+}
+
+.square-4{
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%,-100%);
+    border: 2px solid aquamarine;
+}
+
+.square-5{
+    width: 50px;
+    height: 50px;
+    transform: translate(-150%, 100%);
+    border: 2px solid red;
 }

@@ -1,3 +1,7 @@
+:root{
+    --color-fondo:#dbdde1;
+}
+
 body, h1, p{
     margin: 0;
     padding: 0;
@@ -247,6 +251,8 @@ p{
     100%{transform: rotateX(60deg);}
 }
 
+
+
 .rotation-y{
     width: 50px;
     height: 50px;
@@ -263,6 +269,7 @@ p{
     100%{transform: rotateY(-60deg);}
 }
 
+
 .rotation-z{
     width: 50px;
     height: 50px;
@@ -277,4 +284,128 @@ p{
 @keyframes animation-z {
     50%{transform: rotateZ(-60deg);}
     100%{transform:rotateZ(60deg);}
+}
+
+
+
+/* perspective */
+
+.pers{
+    perspective: 300px;
+}
+
+.rectangle-1{
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  transform: rotateY(0deg);
+  animation-name: perspectiva;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
+}
+
+@keyframes perspectiva {
+    0%{background: orange;}
+    50%{transform: rotateX(-30deg) rotateY(-10deg); background: red;}
+    100%{transform: rotateX(30deg) rotateY(10deg); background-color: yellow;}
+}
+
+
+
+.ani{
+    background-color: #eeeeee;
+}
+
+.parent{
+    width: 150px;
+    height: 150px;
+    background: var(--color-fondo);
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+
+    /* perspectiva en el padre */
+    perspective: 800px;
+}
+
+.my-box{
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    animation-name: plate;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes plate{
+    0%{}
+    50%{transform: rotateX(60deg);}
+    100%{transform: rotateX(-60deg);}
+}
+
+.fondo-1{
+    width: 150px;
+    height: 150px;
+    background: var(--color-fondo);
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+
+    /* perspectiva */
+    perspective: 800px;
+}
+
+.tapa-1{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+    transition: all;
+    transition-duration: 1.5s;
+}
+
+.tapa-1:hover{
+    transform: rotateZ(90deg);
+}
+
+
+.fondo-2{
+    width: 150px;
+    height: 150px;
+    background: var(--color-fondo);
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+
+    /* perspectiva*/
+    perspective: 800px;
+    /* puede ser tambien: top right - top left*/
+    perspective-origin: top;
+}
+
+
+
+.tapa-2{
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+    transform-origin: top;
+    animation-name: plate-2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes plate-2{
+    0%{}
+    50%{transform: rotateX(60deg);}
+    100%{transform: rotateX(-60deg);}
 }

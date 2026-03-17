@@ -66,6 +66,8 @@ header{
 .btn-accent{
     background-color: #FFE600;
     color: #000;
+    transition-property: all;
+    transition-duration: 0.5s;
 }
 
 .btn-accent:hover{
@@ -75,6 +77,8 @@ header{
 .btn-dark{
     background-color: #000;
     color: #fff;
+    transition-property: all;
+    transition-duration: 0.5s;
 }
 
 .btn-dark:hover{

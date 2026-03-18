@@ -9,45 +9,70 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* ==============================
+Typography
+===============================*/
+
 h1{
     font-family: 'Lora', serif;
     font-weight: 400;
+    font-size: 2rem;
     margin: 0;
     color: #143774;
 }
+
+.subtitle{
+    color: #1792D2;
+    margin: 0;
+    font-weight: 700;
+    font-size: .75rem;
+}
+
+
+/* =============================
+Layout
+==============================*/
+
+
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 header{
     background-color: #f8f8f8;
     padding: 2em 0;
 }
 
-.container{
-    margin: 0 auto;
-    width: 90%;
-    max-width: 900px;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid magenta;
+@media (max-width:675px) {
+    .container-nav{
+        flex-direction: column;
+    }
+
+    header{
+        text-align: center;
+    }
 }
 
-.site-title{
-    color: #1792D2;
-}
 
-.subtitle{
-    margin: 0;
-    font-weight: 700;
-    font-size: .75rem;
-}
+/* navigation */
 
 nav ul{
-    display: flex;
+    list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav li{
     margin-left: 2em;
-    list-style: none;
 }
 
 nav a{
@@ -57,8 +82,40 @@ nav a{
     padding: .25em 0;
 }
 
-
+nav a:hover,
+nav a:focus{
+    color: #1792D2;
+}
 
 .current-page{
     border-bottom: 2px solid #707070;
 }
+
+.current-page:hover{
+    color: #707070;
+}
+
+@media (max-width: 675px){
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li{
+        margin: .5em 0;
+    }
+}
+
+
+.site-title{
+    color: #1792D2;
+}
+
+
+
+
+
+
+
+
+
+

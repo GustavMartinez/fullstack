@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Martinez | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+
+        .wealthy-gradient {
+            background: radial-gradient(circle at top center, #1a1a1a 0%, #000000 70%);
+        }
+
+        .gold-accent {
+            color: #c5a059; /* Un tono oro sutil, no chillón */
+        }
+
+        .gold-bg {
+            background-color: #c5a059;
+        }
+
+        .card-border {
+            border: 1px solid rgba(197, 160, 89, 0.1);
+            transition: all 0.4s ease;
+        }
+
+        .card-border:hover {
+            border: 1px solid rgba(197, 160, 89, 0.4);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -15px rgba(197, 160, 89, 0.2);
+        }
+
+        .filter-btn.active {
+            background-color: #c5a059;
+            color: black;
+        }
+
+        /* Ocultar elementos para el filtro */
+        .project-card.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="wealthy-gradient min-h-screen">
+
+
+    <nav class="p-8 flex justify-between items-center max-w-7xl mx-auto sticky top-0 z-50 bg-black/50 backdrop-blur-md">
+        <div class="text-xl font-bold tracking-widest gold-accent">G.MARTINEZ</div>
+        <div class="hidden md:flex gap-8 text-[11px] uppercase tracking-[0.2em] text-gray-400">
+            <a href="#proyectos" class="hover:text-[#c5a059] transition-colors">Proyectos</a>
+            <a href="#skills" class="hover:text-[#c5a059] transition-colors">Expertise</a>
+            <a href="mailto:tuemail@ejemplo.com" class="hover:text-[#c5a059] transition-colors">Contacto</a>
+        </div>
+        <div class="flex gap-6">
+            <a href="https://github.com" target="_blank" class="hover:text-[#c5a059] transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="hover:text-[#c5a059] transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+        </div>
+    </nav>
+
+
+<!-- 
+
+    <nav class="p-8 flex justify-between items-center max-w-7xl mx-auto">
+        <div class="text-xl font-bold tracking-widest gold-accent">G.MARTINEZ</div>
+        <div class="flex gap-6">
+            <a href="mailto:tuemail@ejemplo.com" class="hover:text-[#c5a059] transition-colors"><i data-lucide="mail"></i></a>
+            <a href="https://github.com" target="_blank" class="hover:text-[#c5a059] transition-colors"><i data-lucide="github"></i></a>
+        </div>
+    </nav>
+
+
+
+     -->
+    <section class="h-[70vh] flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Gustavo Martinez</h1>
+        <p class="text-gray-400 text-lg md:text-xl max-w-2xl font-light tracking-wide">
+            Especialista en <span class="gold-accent">GIS</span>, <span class="gold-accent">Data Science</span> & <span class="gold-accent">Web Development</span>. 
+            Soluciones analíticas con un enfoque de excelencia técnica.
+        </p>
+        <div class="mt-10 flex gap-4">
+            <a href="#proyectos" class="gold-bg text-black px-8 py-3 rounded-full font-medium hover:bg-opacity-80 transition-all">Explorar Proyectos</a>
+        </div>
+    </section>
+
+
+
+    <section class="max-w-7xl mx-auto px-8 mb-32">
+    <div class="text-center mb-16">
+        <h2 class="text-xs uppercase tracking-[0.4em] text-gray-500 mb-4">Servicios Especializados</h2>
+        <div class="h-[1px] w-20 bg-[#c5a059] mx-auto"></div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="text-center group">
+            <div class="mb-6 inline-block p-4 rounded-full border border-transparent group-hover:border-[#c5a059]/30 transition-all duration-500">
+                <i data-lucide="layers" class="w-8 h-8 gold-accent"></i>
+            </div>
+            <h3 class="text-xl font-medium mb-4">Inteligencia Geoespacial</h3>
+            <p class="text-gray-500 font-light leading-relaxed">Análisis avanzado de datos espaciales para la toma de decisiones estratégicas y planificación territorial compleja.</p>
+        </div>
+
+        <div class="text-center group">
+            <div class="mb-6 inline-block p-4 rounded-full border border-transparent group-hover:border-[#c5a059]/30 transition-all duration-500">
+                <i data-lucide="trending-up" class="w-8 h-8 gold-accent"></i>
+            </div>
+            <h3 class="text-xl font-medium mb-4">Data Science & Insights</h3>
+            <p class="text-gray-500 font-light leading-relaxed">Modelado predictivo y procesamiento de grandes volúmenes de datos para descubrir patrones y optimizar procesos.</p>
+        </div>
+
+        <div class="text-center group">
+            <div class="mb-6 inline-block p-4 rounded-full border border-transparent group-hover:border-[#c5a059]/30 transition-all duration-500">
+                <i data-lucide="monitor" class="w-8 h-8 gold-accent"></i>
+            </div>
+            <h3 class="text-xl font-medium mb-4">Soluciones Web GIS</h3>
+            <p class="text-gray-500 font-light leading-relaxed">Desarrollo de dashboards interactivos y aplicaciones web personalizadas para la visualización de activos en tiempo real.</p>
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+
+    <div id="proyectos" class="max-w-7xl mx-auto px-8 mb-12">
+        <div class="flex flex-wrap justify-center gap-4">
+            <button class="filter-btn active px-6 py-2 rounded-full border border-[#c5a059] text-sm uppercase tracking-widest" onclick="filterProjects('all')">Todos</button>
+            <button class="filter-btn px-6 py-2 rounded-full border border-[#c5a059] text-sm uppercase tracking-widest" onclick="filterProjects('gis')">GIS</button>
+            <button class="filter-btn px-6 py-2 rounded-full border border-[#c5a059] text-sm uppercase tracking-widest" onclick="filterProjects('ds')">Data Science</button>
+            <button class="filter-btn px-6 py-2 rounded-full border border-[#c5a059] text-sm uppercase tracking-widest" onclick="filterProjects('web')">Web Dev</button>
+        </div>
+    </div>
+
+    <section class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
+        
+        <div class="project-card card-border bg-[#0a0a0a] p-8 rounded-2xl flex flex-col justify-between" data-category="gis">
+            <div>
+                <div class="text-[10px] gold-accent tracking-[0.2em] uppercase mb-4">Geospatial Analysis</div>
+                <h3 class="text-2xl font-semibold mb-3">Sustentabilidad Urbana 2026</h3>
+                <p class="text-gray-500 font-light text-sm mb-6 leading-relaxed">Modelado de expansión urbana utilizando ArcGIS Pro y análisis de cuencas hidrográficas para planificación territorial.</p>
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="bg-[#1a1a1a] text-[10px] px-3 py-1 rounded-full text-gray-300">ArcGIS Pro</span>
+                    <span class="bg-[#1a1a1a] text-[10px] px-3 py-1 rounded-full text-gray-300">GeoServer</span>
+                </div>
+            </div>
+            <a href="#" class="flex items-center gap-2 text-sm gold-accent hover:underline">Ver Proyecto <i data-lucide="arrow-up-right" class="w-4"></i></a>
+        </div>
+
+        <div class="project-card card-border bg-[#0a0a0a] p-8 rounded-2xl flex flex-col justify-between" data-category="ds">
+            <div>
+                <div class="text-[10px] gold-accent tracking-[0.2em] uppercase mb-4">Machine Learning</div>
+                <h3 class="text-2xl font-semibold mb-3">Predictor de Yield Agrícola</h3>
+                <p class="text-gray-500 font-light text-sm mb-6 leading-relaxed">Algoritmo predictivo basado en Pandas y Seaborn para optimizar la cosecha mediante datos climáticos históricos.</p>
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="bg-[#1a1a1a] text-[10px] px-3 py-1 rounded-full text-gray-300">Python</span>
+                    <span class="bg-[#1a1a1a] text-[10px] px-3 py-1 rounded-full text-gray-300">Pandas</span>
+                </div>
+            </div>
+            <a href="#" class="flex items-center gap-2 text-sm gold-accent hover:underline">Ver Notebook <i data-lucide="external-link" class="w-4"></i></a>
+        </div>
+
+        <div class="project-card card-border bg-[#0a0a0a] p-8 rounded-2xl flex flex-col justify-between" data-category="web">
+            <div>
+                <div class="text-[10px] gold-accent tracking-[0.2em] uppercase mb-4">Frontend Development</div>
+                <h3 class="text-2xl font-semibold mb-3">Interactive Map Dashboard</h3>
+                <p class="text-gray-500 font-light text-sm mb-6 leading-relaxed">Dashboard interactivo de alta gama para visualización de activos en tiempo real sobre capas de Leaflet.</p>
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="bg-[#1a1a1a] text-[10px] px-3 py-1 rounded-full text-gray-300">JavaScript</span>
+                    <span class="bg-[#1a1a1a] text-[10px] px-3 py-1 rounded-full text-gray-300">Tailwind</span>
+                </div>
+            </div>
+            <a href="#" class="flex items-center gap-2 text-sm gold-accent hover:underline">Ver Código <i data-lucide="code" class="w-4"></i></a>
+        </div>
+
+    </section>
+
+
+    <section class="max-w-5xl mx-auto px-8 mb-32" id="skills">
+        <h2 class="text-xs uppercase tracking-[0.4em] text-gray-500 mb-12 text-center">Tech Stack & Expertise</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="p-6 card-border bg-[#050505] rounded-xl text-center">
+                <i data-lucide="map" class="w-5 h-5 mx-auto mb-4 gold-accent"></i>
+                <h4 class="text-[10px] uppercase tracking-widest text-gray-400 mb-3">GIS & Maps</h4>
+                <div class="flex flex-wrap justify-center gap-2">
+                    <span class="text-xs border border-gray-800 px-2 py-1 rounded">QGIS</span>
+                    <span class="text-xs border border-gray-800 px-2 py-1 rounded">ArcGIS Pro</span>
+                    <span class="text-xs border border-gray-800 px-2 py-1 rounded">GeoServer</span>
+                </div>
+            </div>
+
+            <div class="p-6 card-border bg-[#050505] rounded-xl text-center">
+                <i data-lucide="database" class="w-5 h-5 mx-auto mb-4 gold-accent"></i>
+                <h4 class="text-[10px] uppercase tracking-widest text-gray-400 mb-3">Data Science</h4>
+                <div class="flex flex-wrap justify-center gap-2">
+                    <span class="text-xs border border-gray-800 px-2 py-1 rounded">Python</span>
+                    <span class="text-xs border border-gray-800 px-2 py-1 rounded">Pandas</span>
+                    <span class="text-xs border border-gray-800 px-2 py-1 rounded">NumPy</span>
+                </div>
+            </div>
+
+            <div class="p-6 card-border bg-[#050505] rounded-xl text-center">
+                <i data-lucide="code-2" class="w-5 h-5 mx-auto mb-4 gold-accent"></i>
+                <h4 class="text-[10px] uppercase tracking-widest text-gray-400 mb-3">Development</h4>
+                <div class="flex flex-wrap justify-center gap-2">
+                    <span class="text-xs border border-gray-800 px-2 py-1 rounded">JS</span>
+                    <span class="text-xs border border-gray-800 px-2 py-1 rounded">HTML/CSS</span>
+                    <span class="text-xs border border-gray-800 px-2 py-1 rounded">Linux</span>
+                </div>
+            </div>
+
+            <div class="p-6 card-border bg-[#050505] rounded-xl text-center">
+                <i data-lucide="bar-chart-3" class="w-5 h-5 mx-auto mb-4 gold-accent"></i>
+                <h4 class="text-[10px] uppercase tracking-widest text-gray-400 mb-3">Visualization</h4>
+                <div class="flex flex-wrap justify-center gap-2">
+                    <span class="text-xs border border-gray-800 px-2 py-1 rounded">Matplotlib</span>
+                    <span class="text-xs border border-gray-800 px-2 py-1 rounded">Seaborn</span>
+                    <span class="text-xs border border-gray-800 px-2 py-1 rounded">Leaflet</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="max-w-7xl mx-auto px-8 mb-32">
+        <div class="card-border bg-[#050505] rounded-[2rem] p-12 md:p-20 text-center relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-[#c5a059]/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+            
+            <h2 class="text-3xl md:text-5xl font-bold mb-6 tracking-tight">¿Tienes un proyecto de <span class="gold-accent">alto impacto</span>?</h2>
+            <p class="text-gray-400 text-lg mb-10 max-w-xl mx-auto font-light">
+                Estoy disponible para colaboraciones estratégicas en proyectos de GIS y Data Science que requieran precisión y diseño excepcional.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="mailto:tuemail@ejemplo.com" class="gold-bg text-black px-10 py-4 rounded-full font-semibold hover:bg-opacity-80 transition-all flex items-center justify-center gap-2">
+                    Hablemos por Email <i data-lucide="send" class="w-4 h-4"></i>
+                </a>
+                <a href="#" class="border border-[#c5a059] text-[#c5a059] px-10 py-4 rounded-full font-semibold hover:bg-[#c5a059]/10 transition-all flex items-center justify-center gap-2">
+                    Descargar CV <i data-lucide="download" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="border-t border-[#1a1a1a] py-12 text-center text-gray-600 text-[11px] uppercase tracking-[0.2em]">
+        <div class="flex justify-center gap-8 mb-6">
+            <a href="#" class="hover:text-[#c5a059] transition-colors">LinkedIn</a>
+            <a href="#" class="hover:text-[#c5a059] transition-colors">GitHub</a>
+            <a href="#" class="hover:text-[#c5a059] transition-colors">Email</a>
+        </div>
+        <p>&copy; 2026 Gustavo Martinez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Inicializar Iconos
+        lucide.createIcons();
+
+        // Lógica de Filtros
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            // Actualizar botones
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+                if(btn.innerText.toLowerCase().includes(category) || (category === 'all' && btn.innerText.toLowerCase() === 'todos')) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Filtrar tarjetas
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.classList.remove('hidden');
+                    card.style.opacity = "0";
+                    setTimeout(() => { card.style.opacity = "1"; }, 10);
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+        // Animación de entrada suave
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section, nav');
+            sections.forEach((sec, index) => {
+                sec.style.opacity = "0";
+                sec.style.transform = "translateY(20px)";
+                sec.style.transition = "all 0.8s ease-out";
+                
+                setTimeout(() => {
+                    sec.style.opacity = "1";
+                    sec.style.transform = "translateY(0)";
+                }, 200 * index);
+            });
+        }); 
+    </script>
+</body>
+</html>
